@@ -7,9 +7,8 @@ export default function AppCount() {
 
   return (
     <div className='appCount'>
-      <div className="totalCount">
-        Total Count {totalCount} {totalCount >= 10 ? '🔥' : '❄'}  
-      </div>
+      <div className='totalCount'>Total Count {totalCount >= 10 ? '☀️' : '☔'}</div>
+      <div className='totalNum'>{totalCount}</div>
       <Counter totalCount={totalCount} onClick={handleClick} />
       <Counter totalCount={totalCount} onClick={handleClick} />
     </div>

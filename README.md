@@ -6,5 +6,5 @@
 <br>
 
 | 제목 | 구현 내용 | 날짜 | 링크 |
-| :---: | :---: | :---: | :---: |
-| Counter | 두 개의 counter와 버튼이 있고 버튼을 누르면 각각의 counter의 숫자가 올라가고 두 개의 counter의 총 count가 업데이트 된다. | 23-03-27 | https://github.com/chaevivin/React-study/tree/main/src/Counter |
+| :---: | :--- | :---: | :---: |
+| Counter | 두 개의 counter와 버튼이 있고 버튼을 누르면 각각의 counter의 숫자가 올라가고 두 개의 counter의 총 count가 업데이트 된다. | 230327 | https://github.com/chaevivin/React-study/tree/main/src/Counter |
