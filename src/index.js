@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import AppCount from './Counter/AppCount';
+// import AppCount from './Counter/AppCount';
+import AppStalker from './Stalker/AppStalker';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppCount />
+    <AppStalker />
   </React.StrictMode>
 );
 
