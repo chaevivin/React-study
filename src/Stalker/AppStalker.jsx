@@ -7,7 +7,11 @@ export default function AppStalker() {
     <div className="container" onPointerMove={(e) => {
       setPosition({ x: e.clientX, y: e.clientY });
     }}>
-      <div className="stalker" style={{ transform: `translate(${position.x}px, ${position.y}px)`}}></div>
+      <img 
+        className="stalker"
+        src="./basketball.png"
+        style={{ transform: `translate(${position.x}px, ${position.y}px)`}}
+      />
     </div>
   );
 }

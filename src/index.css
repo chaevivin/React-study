@@ -83,18 +83,17 @@ table {
 }
 
 .container {
-  margin: auto;
   width: 100vw;
   height: 100vh;
-  background-color: beige;
+  background-image: url('/public/court.jpg');
+  background-size: cover;
 }
 
 .stalker {
   position: absolute;
-  background-color: crimson;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   left: -15px;
   top: -15px;
 }
