@@ -43,7 +43,14 @@ table {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@font-face {
+  font-family: 'SUIT-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
+/* AppCount */
 .appCount {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -82,6 +89,7 @@ table {
   padding: 1rem 1.5rem;
 }
 
+/* AppStalker */
 .container {
   width: 100vw;
   height: 100vh;
@@ -96,4 +104,51 @@ table {
   height: 60px;
   left: -15px;
   top: -15px;
+}
+
+/* AppForm */
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.form {
+  width: 400px;
+  height: 200px;
+  padding: 50px 0 30px;
+  border: 2px solid #fff0a6;
+  border-radius: 10px;
+  box-shadow: 4px 3px 18px 5px rgba(237,226,178,0.75);
+  -webkit-box-shadow: 4px 3px 18px 5px rgba(237,226,178,0.75);
+  -moz-box-shadow: 4px 3px 18px 5px rgba(237,226,178,0.75);
+}
+
+.nameLabel, .emailLabel {
+  font-size: 20px;
+  font-family: 'SUIT-Bold';
+}
+
+.nameLabel {
+  margin-right: 17px;
+}
+
+#formName, #formEmail {
+  padding: 5px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff0a6;
+}
+
+.formSubmit {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: 'SUIT-Bold';
+  background-color: #fff0a6;
+  margin-top: 50px;
 }

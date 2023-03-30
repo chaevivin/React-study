@@ -15,25 +15,31 @@ export default function AppForm() {
   };
 
   return (
-    <form className='form' onSubmit={handleSubmit}>
-      <label className='name'>이름 : </label>
-      <input 
-        type='text'
-        id='formName'
-        name='name' 
-        value={form.name} 
-        onChange={handleChange} 
-      />
-      <label>이메일 : </label>
-      <input 
-        type='email' 
-        id='formEmail'
-        name='email'
-        value={form.email} 
-        onChange={handleChange} 
-      />
-      <button className='formSubmit'>Submit</button>
-    </form>
+    <div className="formContainer">
+      <form className='form' onSubmit={handleSubmit}>
+        <div className="nameContainer">
+          <label className='nameLabel'>이름</label>
+          <input 
+            type='text'
+            id='formName'
+            name='name' 
+            value={form.name} 
+            onChange={handleChange} 
+          />
+        </div>
+        <div className="emailContainer">
+          <label className='emailLabel'>이메일</label>
+          <input 
+            type='email' 
+            id='formEmail'
+            name='email'
+            value={form.email} 
+            onChange={handleChange} 
+          />
+        </div>
+        <button className='formSubmit'>Submit</button>
+      </form>
+    </div>
   );
 }
 
