@@ -9,7 +9,7 @@ export default function AppStalker() {
     }}>
       <img 
         className="stalker"
-        src="./basketball.png"
+        src="img/basketball.png"
         style={{ transform: `translate(${position.x}px, ${position.y}px)`}}
       />
     </div>
