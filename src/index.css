@@ -145,7 +145,6 @@ table {
 
 /* AppStalker */
 .container {
-  width: 100vw;
   height: 100vh;
   background-image: url('/public/img/court.jpg');
   background-size: cover;
@@ -157,7 +156,7 @@ table {
   width: 60px;
   height: 60px;
   left: -15px;
-  top: -15px;
+  bottom: 50px;
 }
 
 /* AppForm */

@@ -7,6 +7,7 @@ export default function AppForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(form);
+    setForm({ name: '', email: '' });
   };
 
   const handleChange = (e) => {

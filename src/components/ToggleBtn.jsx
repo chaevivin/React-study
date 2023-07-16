@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 
-export const ToggleBtn = ({ title, isVisible }) => {
+export const ToggleBtn = ({ title, isVisible, id }) => {
   const [clicked, setClicked] = useState(false);
   const handleBtnClick = () => {
     setClicked(!clicked);
-    isVisible(clicked);
-    console.log(clicked);
+    isVisible(!clicked, id);
   };
 
   return (
@@ -15,7 +14,7 @@ export const ToggleBtn = ({ title, isVisible }) => {
         <button className='toggleBtn' onClick={handleBtnClick}>
           {clicked ? 
             <img src="img/down.png" alt="downButton" className='downBtn' /> :
-            <img src="img/down.png" alt="downButton" className='downBtnRotate' />
+            <img src="img/down.png" alt="downButton" className='downBtnRotate' /> 
           }
         </button>
       </div>
