@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styled from './AppForm.module.css';
 
 export default function AppForm() {
 
@@ -16,29 +17,31 @@ export default function AppForm() {
   };
 
   return (
-    <div className="formContainer">
-      <form className='form' onSubmit={handleSubmit}>
-        <div className="nameContainer">
-          <label className='nameLabel'>이름</label>
+    <div className={styled.container}>
+      <form className={styled.form} onSubmit={handleSubmit}>
+        <div className={styled.nameContainer}>
+          <label className={styled.nameLabel}>이름</label>
           <input 
             type='text'
             id='formName'
             name='name' 
             value={form.name} 
             onChange={handleChange} 
+            className={styled.input}
           />
         </div>
-        <div className="emailContainer">
-          <label className='emailLabel'>이메일</label>
+        <div className={styled.emailContainer}>
+          <label className={styled.emailLabel}>이메일</label>
           <input 
             type='email' 
             id='formEmail'
             name='email'
             value={form.email} 
             onChange={handleChange} 
+            className={styled.input}
           />
         </div>
-        <button className='formSubmit'>Submit</button>
+        <button className={styled.formSubmit}>Submit</button>
       </form>
     </div>
   );

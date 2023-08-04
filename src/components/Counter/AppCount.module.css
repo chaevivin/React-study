@@ -1,0 +1,38 @@
+/* AppCount */
+.appCount {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 3rem;
+}
+
+.totalCount {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.totalNum {
+  font-size: 4rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 10rem;
+  box-shadow: 5px 4px 12px -2px rgba(166,166,166,0.75);
+  -webkit-box-shadow: 5px 4px 12px -2px rgba(166,166,166,0.75);
+  -moz-box-shadow: 5px 4px 12px -2px rgba(166,166,166,0.75);
+}
+
+.counter {
+  font-size: 1.5rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  box-shadow: 5px 4px 12px -2px rgba(166,166,166,0.75);
+  -webkit-box-shadow: 5px 4px 12px -2px rgba(166,166,166,0.75);
+  -moz-box-shadow: 5px 4px 12px -2px rgba(166,166,166,0.75);
+}
+
+.countBtn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;  
+  padding: 1rem 1.5rem;
+}

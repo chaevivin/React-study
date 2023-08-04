@@ -1,0 +1,15 @@
+/* AppStalker */
+.container {
+  height: 100vh;
+  background-image: url('/public/img/court.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.stalker {
+  position: absolute;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  left: -15px;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { ToggleBtn } from './components/ToggleBtn';
 
 export const App = (props) => {
-
+  
   return (
     <div className='appContainer'>
       <img src="/img/react.png" alt="React logo" className='reactLogo'/>

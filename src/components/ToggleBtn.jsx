@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AppCount from './Counter/AppCount';
 import AppStalker from './Stalker/AppStalker';
 import AppForm from './Form/AppForm';
+import styled from './ToggleBtn.module.css';
 
 export const ToggleBtn = ({ title, id }) => {
   const [clicked, setClicked] = useState(false);
@@ -11,12 +12,12 @@ export const ToggleBtn = ({ title, id }) => {
 
   return (
     <div>
-      <div className='toggleBox'>
-        <p className='toggleName'>{title}</p>
-        <button className='toggleBtn' onClick={handleBtnClick}>
+      <div className={styled.toggleBox}>
+        <p className={styled.toggleName}>{title}</p>
+        <button className={styled.toggleBtn} onClick={handleBtnClick}>
           {clicked ? 
-            <img src="img/down.png" alt="downButton" className='downBtn' /> :
-            <img src="img/down.png" alt="downButton" className='downBtnRotate' /> 
+            <img src="img/down.png" alt="downButton" className={styled.downBtn} /> :
+            <img src="img/down.png" alt="downButton" className={styled.downBtnRotate} /> 
           }
         </button>
       </div>
