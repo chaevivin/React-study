@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import AppCount from './Counter/AppCount';
+import AppStalker from './Stalker/AppStalker';
+import AppForm from './Form/AppForm';
 
-export const ToggleBtn = ({ title, isVisible, id }) => {
+export const ToggleBtn = ({ title, id }) => {
   const [clicked, setClicked] = useState(false);
   const handleBtnClick = () => {
     setClicked(!clicked);
-    isVisible(!clicked, id);
   };
 
   return (
@@ -18,6 +20,9 @@ export const ToggleBtn = ({ title, isVisible, id }) => {
           }
         </button>
       </div>
+      {clicked && id === 'counter' && <AppCount />}
+      {clicked && id === 'mouseStalker' && <AppStalker />}
+      {clicked && id === 'form' && <AppForm />}
     </div>
   );
 }

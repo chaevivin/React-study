@@ -1,17 +1,7 @@
-import React, { useState } from 'react';
-import AppCount from './components/Counter/AppCount';
+import React from 'react';
 import { ToggleBtn } from './components/ToggleBtn';
-import AppStalker from './components/Stalker/AppStalker';
-import AppForm from './components/Form/AppForm';
 
 export const App = (props) => {
-  const [visible, setVisible] = useState(true);
-  const [btnId, setBtnId] = useState('');
-
-  const isVisible = (clicked, id) => {
-    clicked ? setVisible(true) : setVisible(false);
-    setBtnId(id);
-  };
 
   return (
     <div className='appContainer'>
@@ -22,21 +12,15 @@ export const App = (props) => {
         <ToggleBtn 
           id='counter'
           title='Counter'
-          isVisible={isVisible}
         />
-        {visible && btnId === 'counter' && <AppCount />}
         <ToggleBtn
           id='mouseStalker'
           title='Mouse Stalker'
-          isVisible={isVisible}
         />
-        {visible && btnId === 'mouseStalker' && <AppStalker />}
         <ToggleBtn
           id='form'
           title='Form'
-          isVisible={isVisible}
         />
-        {visible && btnId === 'form' && <AppForm />}
       </div>
     </div>
   );
