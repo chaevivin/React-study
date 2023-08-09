@@ -3,6 +3,7 @@ import AppCount from './Counter/AppCount';
 import AppStalker from './Stalker/AppStalker';
 import AppForm from './Form/AppForm';
 import styled from './ToggleBtn.module.css';
+import AppTodo from './To-do/AppTodo';
 
 export const ToggleBtn = ({ title, id }) => {
   const [clicked, setClicked] = useState(false);
@@ -24,6 +25,7 @@ export const ToggleBtn = ({ title, id }) => {
       {clicked && id === 'counter' && <AppCount />}
       {clicked && id === 'mouseStalker' && <AppStalker />}
       {clicked && id === 'form' && <AppForm />}
+      {clicked && id === 'todo' && <AppTodo />}
     </div>
   );
 }

@@ -21,6 +21,10 @@ export const App = (props) => {
           id='form'
           title='Form'
         />
+        <ToggleBtn 
+          id='todo'
+          title='Todo List'
+        />
       </div>
     </div>
   );
