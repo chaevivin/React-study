@@ -6,7 +6,7 @@ export default function Todo({ todo, onUpdate, onDelete }) {
   const {id, text, status} = todo;
 
   const handleChange = (e) => {
-    onUpdate({ ...todo, stauts: e.target.checked ? 'completed' : 'active' });
+    onUpdate({ ...todo, status: e.target.checked ? 'completed' : 'active' });
   };
 
   const handleDelete = () => onDelete(todo);
@@ -14,13 +14,13 @@ export default function Todo({ todo, onUpdate, onDelete }) {
   return (
     <li className={styled.item}>
       <input 
-        type='checkbox'
+        type="checkbox" 
         id={id}
-        checked={status === 'completed'}
+        checked={status === 'completed'} 
         onChange={handleChange}
-        className={styled.checkBox}
+        className={styled.checkbox}
       />
-      <label htmlFor={id}>{text}</label>
+      <label htmlFor={id} className={styled.text}>{text}</label>
       <button onClick={handleDelete} className={styled.button}><BiSolidTrash /></button>
     </li>
   );

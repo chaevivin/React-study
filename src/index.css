@@ -71,3 +71,17 @@ table {
 .appDescription {
   margin-bottom: 2rem;
 }
+
+/* AppTodo settings */
+
+:root {
+  --color-bg: #e6f2ff;
+  --color-con-bg: white;
+	--color-text: #404040;
+}
+
+html.dark {
+	--color-bg: #323e59;
+  --color-con-bg: #3f4d6b;
+	--color-text: white;
+}

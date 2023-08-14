@@ -9,11 +9,13 @@ const filters = ['all', 'active', 'completed'];
 export default function AppTodo() {
   const [filter, setFilter] = useState(filters[0]);
 
+
   return (
     <DarkModeProvider>
       <div className={styled.container}>
         <div className={styled.box}>
           <TodoNav
+            filter={filter}
             filters={filters}
             onFilterChange={setFilter}
           />
