@@ -45,8 +45,12 @@
 }
 
 .checkbox:checked + .text {
-  color: #cfcfcf;
   text-decoration: line-through;
+  color: #cfcfcf;
+}
+
+.checkbox:checked + .text {
+  
 }
 
 .button {
@@ -55,4 +59,9 @@
   cursor: pointer;
   color: #91c6ff;
   font-size: 0.9rem;
+}
+
+.button:hover {
+  transform: rotate(40deg) scale(1.1);
+  transition: all 0.3s;
 }

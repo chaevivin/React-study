@@ -1,4 +1,8 @@
-/* ToggleBtn */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .toggleBox {
   width: 75vw;
   height: 2rem;

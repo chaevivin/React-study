@@ -11,7 +11,7 @@ export default function AppStalker() {
       <img 
         alt='background'
         className={styled.stalker}
-        src="img/basketball.png"
+        src={process.env.PUBLIC_URL + "/img/basketball.png"}
         style={{ transform: `translate(${position.x}px, ${position.y}px)`}}
       />
     </div>
