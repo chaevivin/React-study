@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	height: 100vh;
+	background-color: #f5f5f5;
 }
 ol, ul {
 	list-style: none;
@@ -53,10 +53,8 @@ table {
 
 /* App */
 .appContainer {
-  background-color: #f5f5f5;
   padding: 5rem 8rem;
   font-family: 'Montserrat', sans-serif;
-	/* height: 100vh; */
 }
 
 .reactLogo {
