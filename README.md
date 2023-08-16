@@ -77,6 +77,7 @@ https://chaevivin.github.io/React-study/
   ### 📖 내용 
   - 할 일을 입력할 수 있는 투두 리스트
   - 입력 창에 할 일을 입력하면 리스트에 추가 (state: active)
+  - 아무것도 입력하지 않거나 공백을 입력하면, + 버튼을 눌러도 투두가 추가되지 않음
   - 체크박스 누르면 할 일을 완료한 것으로 간주 (state: completed)
   - 네비게이션 바의 메뉴 'all', 'active', 'completed'로 각각의 상태에 맞는 투두 필터링
   - 삭제 버튼 누르면 투두 삭제
