@@ -41,16 +41,12 @@
 }
 
 .item .checkbox:checked::before {
-  transform: scale(1) translate(-50%, -50%)
+  transform: scale(1) translate(-50%, -50%);
 }
 
 .checkbox:checked + .text {
   text-decoration: line-through;
   color: #cfcfcf;
-}
-
-.checkbox:checked + .text {
-  
 }
 
 .button {
