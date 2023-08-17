@@ -1,12 +1,6 @@
-.container {
-  display: flex;
-  justify-content: center;
-}
-
 .toggleBox {
-  width: 75vw;
   height: 2rem;
-  margin: 0.6rem 0;
+  margin: 0.9rem 0;
   border-radius: 10px;
   background-color: #D7EAEC;
   display: flex;

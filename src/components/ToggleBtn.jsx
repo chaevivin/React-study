@@ -13,16 +13,14 @@ export const ToggleBtn = ({ title, id }) => {
 
   return (
     <div>
-      <div className={styled.container}>
-        <div className={styled.toggleBox}>
-          <p className={styled.toggleName}>{title}</p>
-          <button className={styled.toggleBtn} onClick={handleBtnClick}>
-            {clicked ? 
-              <img src={process.env.PUBLIC_URL + "/img/down.png"} alt="downButton" className={styled.downBtn} /> :
-              <img src={process.env.PUBLIC_URL + "/img/down.png"} alt="downButton" className={styled.downBtnRotate} /> 
-            }
-          </button>
-        </div>
+      <div className={styled.toggleBox}>
+        <p className={styled.toggleName}>{title}</p>
+        <button className={styled.toggleBtn} onClick={handleBtnClick}>
+          {clicked ? 
+            <img src={process.env.PUBLIC_URL + "/img/down.png"} alt="downButton" className={styled.downBtn} /> :
+            <img src={process.env.PUBLIC_URL + "/img/down.png"} alt="downButton" className={styled.downBtnRotate} /> 
+          }
+        </button>
       </div>
       {clicked && id === 'counter' && <AppCount />}
       {clicked && id === 'mouseStalker' && <AppStalker />}
