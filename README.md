@@ -4,7 +4,7 @@
 
 - 리액트를 사용해서 컴포넌트 단위의 기능들을 구현 및 연습
 - 토글 버튼으로 해당 컴포넌트 확인 가능
-- Github Actions로 CI/CD 자동화
+- Github Actions로 CI/CD 구축
 - 컴포넌트 계속 추가 중
 
 <br>
