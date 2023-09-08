@@ -12,7 +12,7 @@ export const ToggleBtn = ({ title, id }) => {
   };
 
   return (
-    <div>
+    <section>
       <div className={styled.toggleBox}>
         <p className={styled.toggleName}>{title}</p>
         <button className={styled.toggleBtn} onClick={handleBtnClick}>
@@ -26,6 +26,6 @@ export const ToggleBtn = ({ title, id }) => {
       {clicked && id === 'mouseStalker' && <AppStalker />}
       {clicked && id === 'form' && <AppForm />}
       {clicked && id === 'todo' && <AppTodo />}
-    </div>
+    </section>
   );
 }

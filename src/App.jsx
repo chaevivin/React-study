@@ -4,7 +4,7 @@ import { ToggleBtn } from './components/ToggleBtn';
 export const App = (props) => {
   
   return (
-    <div className='appContainer'>
+    <section className='appContainer'>
       <img src={process.env.PUBLIC_URL + "/img/react.png"} alt="React logo" className='reactLogo'/>
       <h1 className='appTitle'>Practicing <span style={{ color: '#16A3AC' }}>React</span> Components</h1>
       <p className='appDescription'>리액트를 사용해서 컴포넌트 단위의 기능들을 구현 및 연습</p>
@@ -24,6 +24,6 @@ export const App = (props) => {
         id='todo'
         title='Todo List'
       />
-    </div>
+    </section>
   );
 }
