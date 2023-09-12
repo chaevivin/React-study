@@ -1,7 +1,7 @@
 import React from 'react';
 import { ToggleBtn } from './components/ToggleBtn';
 
-export const App = (props) => {
+export const App = () => {
   
   return (
     <section className='appContainer'>

@@ -5,8 +5,13 @@ import AppForm from './Form/AppForm';
 import styled from './ToggleBtn.module.css';
 import AppTodo from './To-do/AppTodo';
 
-export const ToggleBtn = ({ title, id }) => {
-  const [clicked, setClicked] = useState(false);
+interface ToggleBtnProps {
+  title: string;
+  id: string;
+}
+
+export const ToggleBtn = ({ title, id }: ToggleBtnProps) => {
+  const [clicked, setClicked] = useState<boolean>(false);
   const handleBtnClick = () => {
     setClicked(!clicked);
   };
