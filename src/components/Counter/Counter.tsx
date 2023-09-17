@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import styled from './AppCount.module.css';
 
-export default function Counter({ totalCount, onClick }) {
-  const [count, setCount] = useState(0);
+interface CounterProps {
+  totalCount: number;
+  onClick: any;
+}
+
+export default function Counter({ totalCount, onClick }: CounterProps) {
+  const [count, setCount] = useState<number>(0);
 
   return (
     <div className={styled.counter}>
