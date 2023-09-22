@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 import styled from './AppForm.module.css';
 
+interface formState {
+  name: string;
+  email: string;
+}
+
 export default function AppForm() {
+  const [form, setForm] = useState<formState>({ name: '', email: '' });
 
-  const [form, setForm] = useState({ name: '', email: '' });
-
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     console.log(form);
     setForm({ name: '', email: '' });
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { name: string; value: string; }; }) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
