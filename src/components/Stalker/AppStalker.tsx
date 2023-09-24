@@ -1,8 +1,13 @@
 import React, {useState} from 'react';
 import styled from './AppStalker.module.css';
 
+interface positionState {
+  x: number;
+  y: number;
+}
+
 export default function AppStalker() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState<positionState>({ x: 0, y: 0 });
 
   return (
     <div className={styled.container} onPointerMove={(e) => {
