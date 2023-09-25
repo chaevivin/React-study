@@ -3,12 +3,12 @@ import AddTodo from './AddTodo';
 import Todo from './Todo';
 import styled from './TodoList.module.css';
 
-export default function TodoList({ filter }) {
+export default function TodoList({ filter }: any) {
   const [todos, setTodos] = useState(() => readTodos());
 
-  const handleAdd = (todo) => setTodos([...todos, todo]); 
-  const handleUpdate = (updated) => setTodos(todos.map((item) => (item.id === updated.id ? updated : item)));
-  const handleDelete = (deleted) => setTodos(todos.filter((item) => item.id !== deleted.id));
+  const handleAdd = (todo: object) => setTodos([...todos, todo]); 
+  const handleUpdate = (updated: any) => setTodos(todos.map((item: any) => (item.id === updated.id ? updated : item)));
+  const handleDelete = (deleted: any) => setTodos(todos.filter((item: any) => item.id !== deleted.id));
 
   // todo 업데이트마다 local storage에 todos 저장
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function TodoList({ filter }) {
   return (
     <section className={styled.container}>
       <ul className={styled.list}>
-        {filtered.map((item) => (
+        {filtered.map((item: any) => (
           <Todo 
             key={item.id}
             todo={item}
@@ -41,9 +41,9 @@ function readTodos() {
   return todos ? JSON.parse(todos) : [];
 }
 
-function getFilteredItems(todos, filter) {
+function getFilteredItems(todos: any, filter: any): any {
   if(filter === 'all') {
     return todos;
   }
-  return todos.filter(todo => todo.status === filter);
+  return todos.filter((todo: any) => todo.status === filter);
 }

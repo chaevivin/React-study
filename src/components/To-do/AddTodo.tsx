@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import styled from './AddTodo.module.css';
 
-export default function AddTodo({ onAdd }) {
-  const [items, setItems] = useState('');
+export default function AddTodo({ onAdd }: any) {
+  const [items, setItems] = useState<string>('');
 
-  const handleChange = (e) => setItems(e.target.value);
+  const handleChange = (e: { target: { value: React.SetStateAction<string>; }; }) => setItems(e.target.value);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
 
     if (items.trim().length === 0) {

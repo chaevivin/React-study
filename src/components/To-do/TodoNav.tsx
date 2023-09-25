@@ -3,7 +3,13 @@ import { BiSolidSun, BiSolidMoon } from 'react-icons/bi';
 import { useDarkMode } from './context/DarkModeContext';
 import styled from './TodoNav.module.css';
 
-export default function TodoNav({ filter, filters, onFilterChange }) {
+interface NavProps {
+  filter: string;
+  filters: Array<string>;
+  onFilterChange: React.Dispatch<React.SetStateAction<string>>;
+}
+
+export default function TodoNav({ filter, filters, onFilterChange }: NavProps) {
   const { darkMode, toggleDarkMode } = useDarkMode();
 
   return (
@@ -12,7 +18,7 @@ export default function TodoNav({ filter, filters, onFilterChange }) {
         {darkMode ? <BiSolidSun className={styled.sun} /> : <BiSolidMoon />}
       </button>
       <ul className={styled.filters}>
-        {filters.map((value, index) => <li key={index}>
+        {filters.map((value: string, index: number) => <li key={index}>
           <button 
             onClick={() => onFilterChange(value)}
             className={`${styled.filter} ${filter === value && styled.active}`}

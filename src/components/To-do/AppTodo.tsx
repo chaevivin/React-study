@@ -7,7 +7,7 @@ import styled from './AppTodo.module.css';
 const filters = ['all', 'active', 'completed'];
 
 export default function AppTodo() {
-  const [filter, setFilter] = useState(filters[0]);
+  const [filter, setFilter] = useState<string>(filters[0]);
 
 
   return (
