@@ -3,7 +3,7 @@ import styled from './AppCount.module.css';
 
 interface CounterProps {
   totalCount: number;
-  onClick: any;
+  onClick: () => void;
 }
 
 export default function Counter({ totalCount, onClick }: CounterProps) {

@@ -2,10 +2,22 @@ import React from 'react';
 import { BiSolidTrash } from 'react-icons/bi';
 import styled from './Todo.module.css';
 
-export default function Todo({ todo, onUpdate, onDelete }) {
+interface todoType {
+  id: string;
+  text: string;
+  status: string;
+}
+
+interface TodoParamType {
+  todo: todoType;
+  onUpdate: () => object;
+  onDelete: () => object;
+}
+
+export default function Todo({ todo, onUpdate, onDelete }: any) {
   const {id, text, status} = todo;
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { checked: any; }; }) => {
     onUpdate({ ...todo, status: e.target.checked ? 'completed' : 'active' });
   };
 
